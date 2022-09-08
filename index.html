@@ -1,10 +1,116 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Will Shealer's Portfolio</title>
   </head>
   <body>
-sussy
+    <h1>Will Shealer</h1>
+    <h2>Senior Developer</h2>
+    <div style="width: 95%; float:left">
+      <div class="subHeader">Past Projects</div>
+      <p>- Code Flash Cards<br> - CP Blackjack<br> - Team Website<br> - Juice Games</p>
+    </div>
+    <div style="width: 5%; float:right"
+      <div class="subHeader">Past Jobs</div>
+      <p>- Panera Bread<br> - Subway</p>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+      <div class="numbertext">1 / 9</div>
+      <img src="blackjack.PNG"
+      style="width:100%">
+      <div class="text">Blackjack</div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+      <div class="numbertext">2 / 9</div>
+      <img src="blackjack1.PNG"
+      style="width:100%">
+      <div class="text">Blackjack Code Screenshot 1</div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+      <div class="numbertext">3 / 9</div>
+      <img src="blackjack2.PNG"
+      style="width:100%">
+      <div class="text">Blackjack Code Screenshot 2</div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+      <div class="numbertext">4 / 9</div>
+      <img src="blackjack3.PNG"
+      style="width:100%">
+      <div class="text">Blackjack Code Screenshot 3</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="teamWebsite">5 / 9</div>
+      <img src="team f.PNG"
+      style="width:100%">
+      <div class="text2">Team Website</div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+      <div class="numbertext">6 / 9</div>
+      <img src="team website.PNG"
+      style="width:100%">
+      <div class="text">Team Website Code Screenshot</div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+      <div class="numbertext">7 / 9</div>
+      <img src="flash cards.PNG"
+      style="width:100%">
+      <div class="text">Flashcards</div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+      <div class="numbertext">8 / 9</div>
+      <img src="flashcards code1.PNG"
+      style="width:100%">
+      <div class="text">Flashcards Code Screenshot 1</div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+      <div class="numbertext">9 / 9</div>
+      <img src="flashcards2.PNG"
+      style="width:100%">
+      <div class="text">Flashcards Code Screenshot 2</div>
+    </div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <!-- <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span> -->
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
   </body>
 </html>

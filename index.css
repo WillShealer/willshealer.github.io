@@ -1,0 +1,157 @@
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmdShzAStiWwMXSSkWznpWO8A1dpaeyjW2jA:https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm378-09-kny9fh3b.jpg%3Fw%3D800%26dpr%3D1%26fit%3Ddefault%26crop%3Ddefault%26q%3D65%26vib%3D3%26con%3D3%26usm%3D15%26bg%3DF4F4F3%26ixlib%3Djs-2.2.1%26s%3D4d5a73287b905c872e0924f49b3179f8&usqp=CAU")
+}
+
+h1 {
+  font-size: 40px;
+  text-decoration-line: underline;
+  text-align:center;
+  color: white
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  text-decoration-line: underline;
+  text-align:center;
+  color: white;
+}
+
+#headerBlock {
+  display: float;
+  justify-content: space-between;
+}
+
+.subHeader {
+  display: block;
+  text-decoration-line: underline;
+  font-size: 25px;
+  /*width: 48%;*/
+  color: white;
+}
+
+h3 {
+  text-align: left;
+  color: white;
+}
+
+h4 {
+  text-align: right;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+}
+
+/*.p2 {
+  color: white;
+  font-size: 20px;
+}*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 6px;
+  width: 100%;
+  text-align: center;
+}
+
+.text2 {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: inherit;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.teamWebsite {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
